@@ -31,6 +31,18 @@ modules:
         - podman-compose
         - mullvad-vpn
         - mullvad-browser
+        - kde-gtk-config
+        - desktop-backgrounds-kde
+        - f38-backgrounds-kde
+        - f38-backgrounds-extras-kde
+        - f39-backgrounds-kde
+        - f39-backgrounds-extras-kde
+        - f40-backgrounds-kde
+        - f40-backgrounds-extras-kde
+        - f41-backgrounds-kde
+        - f42-backgrounds-kde
+        - f43-backgrounds-kde
+        - f44-backgrounds-kde
 
   - type: systemd
     system:
