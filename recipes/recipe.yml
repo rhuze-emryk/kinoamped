@@ -21,6 +21,7 @@ modules:
       files:
         - https://download.docker.com/linux/fedora/docker-ce.repo
         - https://repository.mullvad.net/rpm/stable/mullvad.repo
+        - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
     install:
       packages:
         - docker-ce
@@ -31,7 +32,11 @@ modules:
         - podman-compose
         - mullvad-vpn
         - mullvad-browser
+        - tailscale
         - kde-gtk-config
+        - neovim
+        - btop
+        - wireguard-tools
         - desktop-backgrounds-kde
         - f38-backgrounds-kde
         - f38-backgrounds-extras-kde
@@ -49,6 +54,7 @@ modules:
       enabled:
         - docker.service
         - mullvad-daemon.service
+        - tailscaled.service
 
   - type: default-flatpaks
     configurations:
