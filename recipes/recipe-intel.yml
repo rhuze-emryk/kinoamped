@@ -1,14 +1,10 @@
 ---
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
-name: kinoamped
-description: Personal Kinoite image with NVIDIA open drivers and development tools.
+name: kinoamped-intel
+description: Personal Kinoite image without NVIDIA drivers, for Intel-only hardware (e.g. ThinkPad X1 Carbon Gen 9).
 
 base-image: ghcr.io/ublue-os/kinoite-main
 image-version: latest
 
 modules:
   - from-file: common.yml
-
-  - type: akmods
-    install: []
-    nvidia-driver: nvidia-open
