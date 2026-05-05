@@ -13,8 +13,8 @@ modules:
         destination: /
 
   - type: akmods
-    nvidia-driver:
-      version: nvidia-open
+    install: []
+    nvidia-driver: nvidia-open
 
   - type: dnf
     install:
