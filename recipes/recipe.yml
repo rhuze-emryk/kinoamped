@@ -16,13 +16,6 @@ modules:
     install: []
     nvidia-driver: nvidia-open
 
-  - type: dnf
-    install:
-      packages:
-        - distrobox
-        - starship
-        - nvidia-container-toolkit
-
   - type: default-flatpaks
     configurations:
       - notify: true
